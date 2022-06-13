@@ -1,0 +1,267 @@
+/* All Common Classes */
+body {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.Heading {
+  text-align: left;
+  font-size: 4rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.subHeading {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 2rem;
+}
+
+.primaryBackGroundColor {
+  background-color: rgb(14, 108, 255);
+}
+
+.backgroundImages {
+  height: 600px;
+  width: 600px;
+}
+
+/* Background Images
+.aboutBackgroundImage{
+  background-image: url(./Images/aboutBackgroundImage.png);
+} */
+
+/* Animations */
+
+.mover-img {
+  -webkit-animation: mover 1s infinite alternate;
+  animation: mover 1s infinite alternate;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  animation-name: mover;
+}
+
+@keyframes mover {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+  }
+}
+/* Navbar custom styling */
+
+a:hover {
+  color: #ffffff;
+}
+a.navbar-brand {
+  font-weight: 600;
+  color: rgb(177, 236, 236);
+}
+
+a.navbar-brand:hover {
+  color: rgb(255, 255, 255);
+  transition: 0.4s all;
+}
+
+a.nav-link {
+  color: white;
+  padding: 0 1rem;
+}
+/* a.nav-link:hover{
+  border-bottom: 2px solid red;
+} */
+a.nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffffff;
+  transition: width 0.6s;
+}
+
+a.nav-link:hover::after {
+  width: 100%;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #ffffff !important;
+}
+
+.change-bg {
+  transition: 0.5s ease-in-out;
+}
+
+/* Home conatiner styling */
+div.mainHome {
+  background-color: rgb(14, 108, 255);
+}
+
+/*  Home title custom styling */
+h1.homeTitle-1 {
+  color: white;
+}
+
+p.homeTitle-2 {
+  color: white;
+}
+
+/* Home button Styling */
+.knowMorebtn {
+  padding: 1rem 2rem;
+}
+
+.knowMorebtn:hover {
+  transition: linear;
+  transition: 0.5s;
+  box-shadow: 0px 0px 62px -11px rgba(250, 250, 250, 1);
+}
+
+/* Banner Image styling */
+
+.imgStyling {
+  margin: 2rem 1rem;
+  height: auto;
+  width: 100%;
+}
+
+.change-bg {
+  background-color: black;
+  color: white;
+}
+
+/* .imgStyling:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-in;
+} */
+
+/* About Us styling */
+
+h1.aboutUsStyling {
+  margin: 2rem;
+}
+
+/* h1.aboutUsLine{
+  position: relative;
+  background-color: blue;
+  height: 0.2rem;
+  width: 10rem;
+} */
+
+/* card styling */
+
+.cardImageStyle {
+  background-size: contain;
+  width: 20rem;
+}
+
+.card {
+  border-color: #ffffff !important;
+}
+.card:hover {
+  border-color: #fff;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  transform: scale(1.01);
+  transition: 0.1s all;
+}
+
+/* Our Features Styling */
+h1.featuresHeading {
+  font-size: 1.75rem;
+}
+
+/* Performance Styling */
+
+.performanceImage {
+  margin: 2rem 1rem;
+  height: auto;
+  width: 100%;
+  border: 0.5rem solid rgba(14, 106, 255, 0.226);
+  border-radius: 0.4rem;
+}
+
+/* Icon Styling */
+
+.iconStyling {
+  font-size: 1.5rem !important;
+  color: rgb(14, 108, 255);
+  background: rgba(14, 106, 255, 0.103);
+  padding: 1rem 1rem;
+  border: 0.4rem solid rgba(14, 106, 255, 0.308);
+  border-radius: 10rem;
+}
+
+/* .iconStyling:hover{  
+  font-size: 1.5rem !important;
+  background: rgb(14, 108, 255);
+  color:rgba(14, 106, 255, 0.103);
+} */
+
+/* Testimony card styling */
+.card {
+  width: 20rem;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 62px -11px rgba(44, 44, 44, 0.199);
+}
+.cardIcons {
+  color: rgb(31, 31, 31);
+  margin-right: 0.5rem;
+}
+
+.fa-facebook-square:hover {
+  color: rgb(57, 57, 253);
+  transform: scale(1.5);
+  transition: 0.09s ease-in-out;
+}
+
+.fa-github:hover {
+  color: black;
+  transform: scale(1.5);
+  transition: 0.09s ease-in-out;
+}
+
+.fa-google-plus-official:hover {
+  color: rgb(218, 29, 29);
+  transform: scale(1.5);
+  transition: 0.09s ease-in-out;
+}
+
+.fa-twitter:hover {
+  color: rgb(0, 140, 255);
+  transform: scale(1.5);
+  transition: 0.09s ease-in-out;
+}
+
+.testimonyImageStyling {
+  border: 0.2rem solid rgba(14, 106, 255, 0.397);
+  margin: 0.7rem;
+  height: 5rem;
+  width: 5rem;
+  border-radius: 3rem;
+}
+
+/* .test-animation {
+  width: 60%;
+  height: 60%;
+  transition: all 2s;
+}
+.test-animation:hover {
+  transform: scale(1.5);
+} */
+
+
+/* Footer link style */
+.footerLinkStyle{
+  margin: 1rem 0rem;
+}
